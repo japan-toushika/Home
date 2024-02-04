@@ -57,6 +57,8 @@
             var time = new Date();
             var hour = time.getHours();
             var min = time.getMinutes();
+            if(min == 1);
+              min = "0" + min;
             document.getElementById('timehere').innerHTML = hour + ":" + min;
         })
         function go_search() {
